@@ -22,14 +22,6 @@
             });
         });
         //call check all checked
-
-
-
-
-
-
-
-
     };
 
     function getState(obj) { return obj.state; };
