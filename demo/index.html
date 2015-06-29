@@ -3,13 +3,45 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="./../src/jsCheckboxController.js"></script>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+            }
+
+        </style>
+
     </head>
 
     <body>
         <script>
-                $(document).ready(function() { $('#test').jsCheckboxController(); });
+                $(document).ready(function() { $('#test').jsCheckboxController('controller', 'checkboxes'); });
         </script>
 
-        <div id="test"></div>
+        <div>
+            <span id="controller">Check All</span>
+            <div>
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+                <input type="checkbox" name="whatever" class="checkboxes" value="1" />Test<br />
+
+            </div>
+        </div>
     </body>
 </html>
