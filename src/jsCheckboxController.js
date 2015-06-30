@@ -6,7 +6,7 @@
         var $targets=$('.'+className);
 
         $controller.on('click', function(e) {
-            handleController(this, className);
+            handleController(this, $targets);
             e.preventDefault();
         });
        /* $targets.each(function(index, element) {
@@ -15,6 +15,7 @@
             });
         });*/
         //call check all checked
+        setDisplay($('#'+controllerId));
     };
     $.fn.jsCheckboxController.options={
         displayCheckAll:'Check All',
@@ -40,11 +41,17 @@
         if(getState()) $(el).each(function() { $(this).prop('checked', true); });
         else $(el).each(function() { $(this).prop('checked', false); });
     };
-    function handleController(obj, className) {
-        setDisplay(obj);
-        setTargets($('.'+className));
+    function handleController(controller, targets) {
         setState(!getState());
+        setDisplay(controller);
+        setTargets(targets);
     };
+    function checkTargets(cObj, chObj) {
+        var allChecked=true;
+        $(chObj).each(function(){
+            if(!$(this).is(':checked')) allChecked=false;
+        });
+        if(allChecked)
 
 
 }(jQuery));
